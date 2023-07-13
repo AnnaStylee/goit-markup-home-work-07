@@ -1,0 +1,23 @@
+:root {
+  --primary-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+
+  --hero-text-color: #ffffff;
+  --hero-theme-dark: #2e2f42;
+
+  --body-text-color-dark: #2e2f42;
+  --body-text-color-light: #434455;
+  --body-theme-light: #ffffff;
+
+  --footer-text-color: #f4f4fd;
+  --footer-theme-dark: #2e2f42;
+  --accent-color: #404bbf;
+  --border-color: #e7e9fc;
+  --customers-color: #8e8f99;
+  --fill-color: #f4f4fd;
+
+  --vertical-gap: 24px;
+  --horizontal-gap: 62px;
+  --horizontal-second-gap: 72px;
+  --items: 4;
+}

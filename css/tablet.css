@@ -1,0 +1,47 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    background-color: aqua;
+  }
+
+  /* ========HEADER============== */
+
+  .header-btn {
+    display: none;
+  }
+
+  .contacts-link {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.48px;
+  }
+
+  /* ===========HERO============== */
+  .hero {
+    padding: 112px 0;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+  }
+
+  .page-hero {
+    background-color: rgba(46, 47, 66, 0.7);
+    background-image: url(../images/header/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/header/people-office.jpg);
+  }
+
+  /* ==========FUTURE============ */
+}

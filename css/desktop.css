@@ -1,0 +1,27 @@
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+
+  /* ===============HEADER====== */
+  .contacts-link {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+  }
+
+  /* ======HERO================== */
+
+  .hero {
+    padding: 188px 0;
+  }
+
+  /* ==========FUTURE============ */
+  .page-future {
+    display: flex;
+    gap: 24px;
+  }
+
+  /* ==========WORK============ */
+}
