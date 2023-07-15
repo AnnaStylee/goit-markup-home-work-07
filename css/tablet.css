@@ -5,6 +5,27 @@
 
   /* ========HEADER============== */
 
+  .container-header {
+    display: flex;
+    gap: 40px;
+  }
+
+  .adress {
+    margin: 0;
+    padding: 0;
+    gap: 12px;
+  }
+
+  .header-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .menue {
+    padding-bottom: 24px;
+    padding-top: 24px;
+  }
+
   .header-btn {
     display: none;
   }
@@ -13,6 +34,10 @@
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.48px;
+  }
+
+  .menu-toggle {
+    display: none;
   }
 
   /* ===========HERO============== */
@@ -43,4 +68,22 @@
   }
 
   /* ==========FUTURE============ */
+  .gallery-item {
+    flex-basis: 356px;
+  }
+
+  /* =======EMPLOYERS========== */
+  .gallery-employers {
+    flex-basis: 264px;
+  }
+
+  /* ========CUSTOMERS========= */
+
+  .customers-icons {
+    flex-basis: 168px;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  /* =================FOOTER================ */
 }

@@ -3,7 +3,16 @@
     max-width: 1158px;
   }
 
+  .section {
+    padding: 120px;
+  }
+
   /* ===============HEADER====== */
+
+  .adress {
+    display: flex;
+  }
+
   .contacts-link {
     display: inline-block;
     font-size: 16px;
@@ -23,5 +32,24 @@
     gap: 24px;
   }
 
+  .gallery-item {
+    flex-basis: 265px;
+  }
+
   /* ==========WORK============ */
+
+  /* =======EMPLOYERS========== */
+
+  .section-team {
+    display: flex;
+    column-gap: 24px;
+  }
+
+  /* ========CUSTOMERS========= */
+
+  .customers-icons {
+    column-gap: 24px;
+  }
+
+  /* ===========FOOTER================ */
 }

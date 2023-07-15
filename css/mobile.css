@@ -1,6 +1,8 @@
 .container {
   max-width: 428px;
   width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
 
   outline: 2px solid green;
   outline-offset: -2px;
@@ -10,8 +12,6 @@
   .container {
     min-width: 320px;
     max-width: 428px;
-    margin: 0 auto;
-    padding: 0 15px;
   }
 
   .header-list,
@@ -24,7 +24,17 @@
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .header-list .contacts {
+    display: none;
+  }
+}
+
 /* ========================COMPONENTS===================== */
+
+.section {
+  padding: 96px;
+}
 
 .section-description {
   text-align: center;
@@ -81,10 +91,6 @@
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-
-.container-header {
-  display: flex;
 }
 
 .site-nav {
@@ -144,23 +150,6 @@
   font-style: normal;
 }
 
-.adress {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  gap: 40px;
-}
-
-.header-list {
-  display: flex;
-  gap: 40px;
-}
-
-.menue {
-  padding-bottom: 24px;
-  padding-top: 24px;
-}
-
 .header-link {
   display: block;
   padding: 24px 0;
@@ -179,6 +168,7 @@
   background: var(--accent-color);
   bottom: -1px;
 }
+
 .header-active {
   color: var(--accent-color, #404bbf);
 }
@@ -226,11 +216,11 @@
   color: #2e2f42;
 }
 
-/* .is-open {
+.is-open {
   pointer-events: none;
   opacity: 0;
   visibility: hidden;
-} */
+}
 
 .mobile-menu-close {
   position: absolute;
@@ -249,7 +239,6 @@
 }
 
 .menu-toggle {
-  display: block;
   min-height: 40px;
   min-width: 40px;
   display: flex;
@@ -268,12 +257,6 @@
   color: #2e2f42;
 }
 
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-}
-
 .menu-toggle:hover,
 .menu-toggle:focus {
   background-color: rgba(0, 0, 0, 0.1);
@@ -283,17 +266,18 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 428px;
+  width: 100%;
   height: 100%;
 
   background-color: #ffffff;
   z-index: 999;
   border-radius: 4px;
-  padding: 72px 24px 24px 24px;
-  margin: 40px;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .menu-container.is-open {
@@ -302,9 +286,9 @@
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #fff;
+  top: 24px;
+  right: 24px;
+  color: #e7e9fc;
 }
 
 .mobile-menu {
@@ -315,7 +299,7 @@
   gap: 40px;
 
   padding: 0;
-  margin: 0;
+  margin-top: 80px;
   list-style: none;
 }
 
@@ -440,15 +424,20 @@
   overflow: hidden;
 }
 
-.future {
+/* .future {
   padding: 120px 0;
-}
+} */
 
 .page-future {
-  flex-direction: column;
+  /* flex-direction: column; */
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+}
+
+.gallery-item {
+  flex-basis: 100%;
+  /* flex-basis: calc((100% - 3 * 24px) / 4); */
 }
 
 .future-text {
@@ -456,10 +445,6 @@
   align-items: center;
   margin: 0;
   padding: 0;
-}
-
-.gallery-item {
-  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .future-wrapper {
@@ -497,6 +482,7 @@
 .work {
   padding-bottom: 120px;
 }
+
 .work-item {
   margin-bottom: 72px;
 }
@@ -516,19 +502,25 @@
 /* ======================EMPLOYERS================== */
 
 .card {
-  padding: 120px 0;
   background-color: var(--cloud, #f4f4fd);
 }
 
 .card-title {
   text-align: center;
-  margin-bottom: 72px;
+  /* margin-bottom: 72px; */
 }
 
 .section-team {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  row-gap: 72px;
+  column-gap: 24px;
+}
+
+.gallery-employers {
+  flex-basis: 100%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .imag-team {
@@ -550,11 +542,6 @@
 
 .position {
   margin-bottom: 8px;
-}
-
-.gallery-items {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .socials {
@@ -589,26 +576,23 @@
 }
 
 /* ===========Customers======== */
-.customers {
+/* .customers {
   padding: 120px 0;
-}
+} */
 
 .customers-title {
   margin-bottom: 72px;
 }
 .customers-wrapper {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   /* gap: 24px; */
 }
 
 .customers-icons {
-  max-width: 190px;
   flex-basis: 190px;
   padding: 16px 40px;
   height: 88px;
-  margin-bottom: 72px;
   /* width: calc((100% - 120px) / 6); */
 }
 
