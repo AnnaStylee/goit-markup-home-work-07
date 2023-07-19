@@ -1,9 +1,6 @@
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
-
-    outline: 2px solid blueviolet;
-    outline-offset: -2px;
   }
 
   .section {
@@ -13,7 +10,8 @@
   /* ===============HEADER====== */
 
   .adress {
-    display: flex;
+    flex-direction: row;
+    gap: 40px;
   }
 
   .contacts-link {
@@ -21,6 +19,11 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
+  }
+
+  .contacts-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   /* ======HERO================== */
@@ -62,8 +65,27 @@
     gap: 24px;
   }
 
+  .container {
+    padding: 0 15px;
+  }
+
+  .future {
+    padding: 120px 0;
+  }
+
   .gallery-item {
-    flex-basis: 265px;
+    flex-basis: 264px;
+  }
+
+  .description-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+  }
+
+  .subtitle {
+    font-weight: 400;
   }
 
   /* ==========WORK============ */
@@ -75,12 +97,13 @@
     gap: 24px;
   }
 
-  .card-title {
+  .card {
     padding: 120px 0;
   }
 
   /* ========CUSTOMERS========= */
-  .customers-title {
+
+  .customers {
     padding: 120px 0;
   }
   .customers-wrapper {
@@ -90,5 +113,34 @@
     gap: 24px;
   }
 
+  .gallery-employers {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+
   /* ===========FOOTER================ */
+
+  .footer {
+    margin-right: 120px;
+  }
+
+  .page-footer {
+    padding: 100px 0;
+  }
+
+  .modal-wrapper-footer {
+    max-width: 453px;
+    margin-left: 80px;
+  }
+
+  .footer-wrapper {
+    padding-left: 15px;
+  }
+
+  .footer-subtitle {
+    margin-bottom: 0;
+  }
+
+  .social-footer {
+    margin-bottom: 0;
+  }
 }

@@ -1,9 +1,6 @@
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-
-    outline: 2px solid yellow;
-    outline-offset: -2px;
   }
 
   /* ========HEADER============== */
@@ -12,15 +9,17 @@
     display: block;
   }
 
+  .page-header {
+    padding: 0;
+  }
+
   .contacts {
     display: block;
   }
 
-  .container-header {
-    gap: 40px;
-  }
-
   .adress {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     gap: 12px;
@@ -50,9 +49,8 @@
     display: none;
   }
 
-  .contacts-link {
-    padding-top: 24px;
-    padding-bottom: 24px;
+  .menu-container {
+    display: none;
   }
 
   /* ===========HERO============== */
@@ -99,17 +97,29 @@
     flex-basis: 356px;
   }
 
+  .description-title {
+    text-align: left;
+  }
+
   /* =======EMPLOYERS========== */
   .gallery-employers {
     flex-basis: 264px;
   }
 
+  .gallery-employers {
+    flex-basis: calc((100% - 2 * 24px) / 2);
+  }
+
+  .section-team {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   /* ========CUSTOMERS========= */
 
   .customers-icons {
     flex-basis: 168px;
     row-gap: 72px;
-    padding: 16px 32px;
     column-gap: 24px;
   }
 
@@ -118,4 +128,34 @@
   }
 
   /* =================FOOTER================ */
+
+  .footer-wrapper {
+    padding-left: 108px;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .footer {
+    align-items: flex-start;
+    margin-right: 24px;
+  }
+
+  .social-subtitle {
+    text-align: left;
+  }
+
+  .footer-form {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .modal-subscribe-footer {
+    text-align: left;
+  }
+
+  .footer-modal-label {
+    max-width: 264px;
+  }
 }
