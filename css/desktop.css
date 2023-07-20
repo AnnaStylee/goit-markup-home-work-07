@@ -143,4 +143,29 @@
   .social-footer {
     margin-bottom: 0;
   }
+
+  /* =============PORTFOLIO=================== */
+
+  .portfolio {
+    padding: 100px 0 120px 0;
+  }
+
+  .page-portfolio {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+  }
+
+  .card-content {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+
+  .portfolio-item {
+    display: block;
+    flex-basis: 360px;
+    flex-basis: calc((100% - 2 * 24px) / 3);
+  }
 }
