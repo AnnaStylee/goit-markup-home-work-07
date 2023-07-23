@@ -780,6 +780,7 @@
 
 .card-content {
   flex-direction: column;
+  row-gap: 24px;
 }
 
 .link-content:hover,
@@ -870,7 +871,7 @@
   letter-spacing: 0.32px;
 }
 
-/* =======================OVERLAY==================== */
+/* ====================OVERLAY==================== */
 .overlay {
   position: absolute;
   top: 0;
